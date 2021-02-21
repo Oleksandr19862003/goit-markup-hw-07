@@ -26,10 +26,12 @@
 .features__items {
   max-width: 270px;
   font-style: normal;
+  @include font(
+    var(--font-size),
+    var(--line-height-normal),
+    var(--letter-spacing)
+  );
   font-weight: var(--bold-font-weight);
-  font-size: var(--font-size);
-  line-height: var(--line-height-normal);
-  letter-spacing: var(--letter-spacing);
   text-transform: uppercase;
   color: var(--title-text-color);
 

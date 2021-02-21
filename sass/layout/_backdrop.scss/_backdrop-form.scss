@@ -79,12 +79,8 @@
 .modal-form__agreement--label {
   margin-top: 20px;
   width: 100%;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: var(--letter-spacing);
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  @include font(14px, 1.714, 0.01em);
+  @include al(flex, center, center);
   align-items: center;
   color: var(--secondary-text-color);
 }

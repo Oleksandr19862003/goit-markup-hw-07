@@ -1,4 +1,4 @@
-@mixin align($d, $jc, $ai) {
+@mixin al($d, $jc, $ai) {
   display: $d;
   justify-content: $jc;
   align-items: $ai;
@@ -7,4 +7,8 @@
   font-size: $fs;
   line-height: $lh;
   letter-spacing: $ls;
+}
+@mixin dimen($w, $h) {
+  width: $w;
+  height: $h;
 }

@@ -9,17 +9,17 @@
 // COMPONENTS
 @import "./components/logo";
 @import "./components/logo-web";
+@import "./components/contacts";
 @import "./components/social-links";
 @import "./components/title";
+@import "./components/portfolio-filter-btn";
 
 // LAYOUT
 @import "./layout/header";
-@import "./layout/clients";
 @import "./layout/footer";
 @import "./layout/footer-join";
 @import "./layout/footer-form";
 
 // PORTFOLIO
-@import "./portfolio/portfolio";
-@import "./portfolio/portfolio-filter-btn";
-@import "./portfolio/portfolio-projects";
+@import "./layout/portfolio";
+@import "./layout/portfolio-projects";

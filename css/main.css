@@ -90,6 +90,42 @@ img {
   color: var(--accent-color);
 }
 
+.contacts {
+  margin-left: auto;
+  display: flex;
+}
+
+.contacts__list {
+  display: flex;
+  align-items: center;
+  color: var(--secondary-text-color);
+}
+
+.contacts__list:not(:first-child) {
+  margin-left: 30px;
+}
+
+.contacts__list-icon {
+  margin-right: 10px;
+}
+
+.contacts__link {
+  padding: 32px 0px;
+  font-weight: var(--normal-font-weight);
+  font-size: var(--font-size);
+  line-height: var(--line-height-normal);
+  display: flex;
+  align-items: center;
+  color: var(--secondary-text-color);
+  fill: currentColor;
+  transition: color 250ms var(--common-cubic-bezier);
+}
+
+.contacts__link:hover, .contacts__link:focus {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
 .order-service-btn {
   margin-left: auto;
   margin-right: auto;
@@ -216,42 +252,6 @@ img {
   background-color: var(--accent-color);
 }
 
-.header-contacts {
-  margin-left: auto;
-  display: flex;
-}
-
-.header-contacts__list {
-  display: flex;
-  align-items: center;
-  color: var(--secondary-text-color);
-}
-
-.header-contacts__list:not(:first-child) {
-  margin-left: 30px;
-}
-
-.header-contacts__list-icon {
-  margin-right: 10px;
-}
-
-.header-contacts__link {
-  padding: 32px 0px;
-  font-weight: var(--normal-font-weight);
-  font-size: var(--font-size);
-  line-height: var(--line-height-normal);
-  display: flex;
-  align-items: center;
-  color: var(--secondary-text-color);
-  fill: currentColor;
-  transition: color 250ms var(--common-cubic-bezier);
-}
-
-.header-contacts__link:hover, .header-contacts__link:focus {
-  color: var(--accent-color);
-  cursor: pointer;
-}
-
 .hero {
   margin-left: auto;
   margin-right: auto;
@@ -308,10 +308,10 @@ img {
 .features__items {
   max-width: 270px;
   font-style: normal;
-  font-weight: var(--bold-font-weight);
   font-size: var(--font-size);
   line-height: var(--line-height-normal);
   letter-spacing: var(--letter-spacing);
+  font-weight: var(--bold-font-weight);
   text-transform: uppercase;
   color: var(--title-text-color);
 }
@@ -449,7 +449,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   fill: var(--common-link);
   border: 1px solid var(--common-link);
   border-radius: 4px;
@@ -635,10 +634,10 @@ img {
 
 .modal-close__btn {
   position: absolute;
-  display: flex;
   padding: 8px;
+  display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   top: 8px;
   right: 8px;
   background: var(--common-lite-color);
@@ -750,10 +749,10 @@ img {
   width: 100%;
   font-size: 14px;
   line-height: 1.714;
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: 0.01em;
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   align-items: center;
   color: var(--secondary-text-color);
 }

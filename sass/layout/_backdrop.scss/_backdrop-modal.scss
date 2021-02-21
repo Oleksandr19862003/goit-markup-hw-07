@@ -17,10 +17,8 @@
 }
 .modal-close__btn {
   position: absolute;
-  display: flex;
   padding: 8px;
-  justify-content: center;
-  text-align: center;
+  @include al(flex, center, center);
   top: 8px;
   right: 8px;
   background: var(--common-lite-color);
